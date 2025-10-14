@@ -1,0 +1,45 @@
+---
+
+## 📁 `.gitignore` (Archivo de Exclusiones)
+
+Este archivo es crucial para evitar subir dependencias y archivos de configuración sensibles a GitHub.
+
+```gitignore
+# -------------------------------------------------------------------
+# Directorios de dependencias y compilación
+# -------------------------------------------------------------------
+node_modules
+dist
+.next
+.turbo
+
+# -------------------------------------------------------------------
+# Archivos de caché y logs
+# -------------------------------------------------------------------
+npm-debug.log
+yarn-error.log
+coverage
+*.tsbuildinfo
+.env.local
+
+# -------------------------------------------------------------------
+# IDE y editores (ej: VS Code)
+# -------------------------------------------------------------------
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.DS_Store
+
+# -------------------------------------------------------------------
+# Backend (NestJS) específicos
+# -------------------------------------------------------------------
+# Evita subir los archivos de compilación de TypeScript
+/backend/dist
+
+# -------------------------------------------------------------------
+# Frontend (Next.js) específicos
+# -------------------------------------------------------------------
+.next/
+out/
